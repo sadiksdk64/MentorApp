@@ -12,6 +12,7 @@ import Start from './src/screens/start';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import SearchMentor from './src/screens/search';
+import Mentor from './src/screens/mentor';
 
 
 const Stack = createNativeStackNavigator();
@@ -24,6 +25,7 @@ const App = () => {
         <Stack.Navigator initialRouteName="Home">
           <Stack.Screen name="Home" component={Start} options={{headerShown: false}} />
           <Stack.Screen name="SearchMentor" component={SearchMentor} options={{headerShown: false}}/>
+          <Stack.Screen name="Mentor" component={Mentor} options={{headerShown: false}}/>
         </Stack.Navigator>
       </NativeBaseProvider>
     </NavigationContainer>
